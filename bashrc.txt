@@ -1,0 +1,17 @@
+# ADD THIS LINE AT THE END OF THE ".bashrc" FILE IN THE HOME DIRECTORY.
+
+
+neofetch --color_blocks on/off          # INSTALL NEOFETCH
+figlet -c "MR. ROBOT"                   # INSTALL FIGLET
+bold='\033[1m'
+darkgrey='\e[37m'
+gray='\e[90m'
+RED='\033[0;31m'
+green='\e[92m'
+WHITE='\033[0;37m'
+yellow='\e[93m'
+blue='$(tput setaf 4)'
+blink='\e[5m'
+echo -e "${RED}                ${bold}C O N T R O L    I S    A N   I L L U S I O N\n"
+echo -e "${RED} ${bold}[${WHITE}${bold}!${RED}${bold}] Warning: ${WHITE} ${bold}Running as 'root' could potentially damage your system.\n"
+export PS1="\[${gray}\]\342\224\214\342\224\200\[${gray}\]\$([[ \$? != 0 ]] && echo \"[\[${gray}\]\342\234\227\[${gray}\]]\342\224\200\")\[${RED}\]\[${bold}\]\u\[${RED}\]\[${bold}\]@\[${RED}\]\[${bold}\]\h:\[${blue}\][\T]\[$(tput sgr0)\]\[${green}\][\w]\[$(tput sgr0)\]\n\[${gray}\]\342\224\224\342\224\200\342\224\200\342\225\274 \[${green}\]\[${bold}\]\\$ \[\e[0m\]"
